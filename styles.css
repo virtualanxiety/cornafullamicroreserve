@@ -1,4 +1,4 @@
-/* Global styles */
+s */
 body {
     background: #000;
     color: #fff;
@@ -96,6 +96,21 @@ body {
         flex-direction: column;
         padding: 20px;
     }
+}
+
+/* ----------------------------------------- */
+/* New text-link green styling for poets.html */
+/* ----------------------------------------- */
+
+.text-section a {
+    color: #39FF9C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text-section a:hover {
+    text-decoration: underline;
+    color: #39FF9C;
 }
 
 
