@@ -1,3 +1,16 @@
+/* Global link styling */
+a {
+    color: #ffffff;       /* white */
+    font-weight: bold;    /* bold */
+    text-decoration: none; /* no underline */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #39FF9C;       /* green on hover */
+    text-decoration: none; /* ensure no underline appears */
+}
+
 /* Global styles */
 body {
     background: #000;
