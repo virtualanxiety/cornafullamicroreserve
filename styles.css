@@ -6,6 +6,17 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Global link styles (applies to all normal page links) */
+a {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #39FF9C; /* neon green */
+}
+
 /* Top banner */
 .top-banner {
     text-align: center;
@@ -65,37 +76,10 @@ body {
     filter: brightness(50%);
 }
 
-/* Link text centered over image, hidden initially */
+/* Link text centered over image, hidden initially (only affects links inside .card) */
 .card a {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff; /* white initially */
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-shadow: 1px 1px 4px #000;
-    opacity: 0; /* invisible by default */
-    transition: opacity 0.3s ease, color 0.3s ease; /* fade-in and color transition */
-}
-
-/* Show link on card hover */
-.card:hover a {
-    opacity: 1;
-}
-
-/* Change link color when hovering over the link itself */
-.card a:hover {
-    color: #39FF9C; /* neon green with hint of blue */
-}
-
-/* Responsive behavior */
-@media (max-width: 900px) {
-    .columns-container {
-        flex-direction: column;
-        padding: 20px;
-    }
-}
-
-
+    color: #ffffff;
