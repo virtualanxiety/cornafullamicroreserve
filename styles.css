@@ -1,17 +1,7 @@
-/* Global link styling */
-a {
-    color: #ffffff;       /* white */
-    font-weight: bold;    /* bold */
-    text-decoration: none; /* no underline */
-    transition: color 0.3s ease;
-}
+/* --------------------------------------------- */
+/* GLOBAL BASE STYLES */
+/* --------------------------------------------- */
 
-a:hover {
-    color: #39FF9C;       /* green on hover */
-    text-decoration: none; /* ensure no underline appears */
-}
-
-/* Global styles */
 body {
     background: #000;
     color: #fff;
@@ -19,18 +9,29 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Global link styles (applies to all normal page links) */
+/* Default link reset (no underline unless class is applied) */
 a {
     color: #ffffff;
-    text-decoration: underline;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
-a:hover {
+/* --------------------------------------------- */
+/* TEXT LINKS (used in poets.html, normal pages) */
+/* --------------------------------------------- */
+
+.text-link {
+    text-decoration: underline;
+}
+
+.text-link:hover {
     color: #39FF9C; /* neon green */
 }
 
-/* Top banner */
+/* --------------------------------------------- */
+/* TOP BANNER */
+/* --------------------------------------------- */
+
 .top-banner {
     text-align: center;
     padding: 40px 20px;
@@ -49,38 +50,44 @@ a:hover {
     color: #ccc;
 }
 
-/* Two-column layout container */
+/* --------------------------------------------- */
+/* LAYOUT: TWO COLUMN CONTAINER */
+/* --------------------------------------------- */
+
 .columns-container {
     display: flex;
     gap: 30px;
     padding: 30px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-/* Each column */
 .column {
     flex: 1;
     max-width: 500px;
 }
 
-/* Card container */
+/* --------------------------------------------- */
+/* CARDS + IMAGE OVERLAY LINKS */
+/* --------------------------------------------- */
+
 .card {
-    position: relative; /* needed for absolute positioning of the link */
+    position: relative; /* Needed for absolute-positioned link */
     margin-bottom: 30px;
     text-align: center;
-    overflow: hidden; /* ensures image darkening doesn’t overflow */
+    overflow: hidden;
 }
 
-/* Images */
-.img-placeholder,
-.placeholder-image {
+/* Images inside cards */
+.placeholder-image,
+.img-placeholder {
     width: 100%;
     height: auto;
     aspect-ratio: 686 / 506;
     background: #000;
     border: 2px solid #000;
     border-radius: 6px;
-    transition: filter 0.3s ease; /* smooth darkening */
+    transition: filter 0.3s ease;
 }
 
 /* Darken image on hover */
@@ -89,10 +96,40 @@ a:hover {
     filter: brightness(50%);
 }
 
-/* Link text centered over image, hidden initially (only affects links inside .card) */
+/* Centered overlay link text */
 .card a {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Optional hover effect for overlay links */
+.card:hover a {
+    color: #39FF9C;
+}
+
+/* --------------------------------------------- */
+/* TEXT CONTENT SECTIONS (poets.html) */
+/* --------------------------------------------- */
+
+.text-section {
+    margin-bottom: 40px;
+}
+
+.text-section h2 {
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Poet card (optional future styling) */
+.poet-card {
+    margin-bottom: 40px;
+}
