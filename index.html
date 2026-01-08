@@ -1,55 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  
+    <link rel="stylesheet" href="style.css" />
     <title>Cornafulla Micro Reserve</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-    <!-- Top banner -->
-    <header class="top-banner">
-        <h1>Cornafulla Micro Reserve</h1>
-        <p>0.8 acre micro site for community and citizen science</p>
+  </head>
+  <body>
+    <header class="header">
+      <h2 class="visually-hidden">Header</h2>
+      <div class="wrapper">
+        <nav class="header__nav">
+          <h2 class="visually-hidden">Navigation</h2>
+          <a href="index.html" class="header__home">
+            Cornafulla Micro Reserve
+            <span class="visually-hidden">(to home page)</span>
+          </a>
+          
+        </nav>
+      </div>
     </header>
 
-    <!-- Two-column layout -->
-    <main class="columns-container">
+    <main id="main">
+      <section class="hero">
+        <div class="wrapper hero__wrapper bottom-border">
+          <div class="hero__content">
+            <picture>
+              <source
+                media="(min-width: 62.5em)"
+                srcset="./assets/images/image-profile-desktop.webp"
+              />
+              <source
+                media="(min-width: 37.5em)"
+                srcset="./assets/images/image-profile-tablet.webp"
+              />
+              <img
+                class="hero__image"
+                src="./assets/images/image-profile-mobile.webp"
+                alt="Map of Cornafulla Bog with Micro Reserve sites in Red"
+                width-="174"
+                height="383"
+              />
+            </picture>
+            
+            
+            <div class="hero__text">
+              <h1 class="hero__headline header-xl">
+                Welcome to Cornafulla&nbsp; <span>Micro Reserve</span>
+              </h1>
+              <p class="hero__description">
+                We're a community-led organisation working in partnership with local landowners and the wider community to manage, conserve and communicate the natural, cultural and ecological heritage of Cornafulla Bog.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Left column -->
-        <section class="column">
-            <div class="card">
-                <img src="images/yellow gorse.webp" alt="" class="placeholder-image">
-                <a href="#">Guided Winter Walk</a>
-            </div>
-            <div class="card">
-                <img src="images/bog cotton.webp" alt="" class="placeholder-image">
-                <a href="poets.html">Poets in Residence</a>
-            </div>
-            <div class="card">
-                <img src="images/magic world.webp" alt="" class="placeholder-image">
-                <a href="#">Looking for the Lizards (Zootoca vivipara)</a>
-            </div>
-        </section>
+      
 
-        <!-- Right column -->
-        <section class="column">
-            <div class="card">
-                <img src="images/lichen.webp" alt="" class="placeholder-image">
-                <a href="#">Plant Identification</a>
-            </div>
-            <div class="card">
-                <img src="images/spaghnum.webp" alt="" class="placeholder-image">
-                <a href="#">The Science of Sphagnum</a>
-            </div>
-            <div class="card">
-                <img src="images/after rain.webp" alt="" class="placeholder-image">
-                <a href="#">Scrub Clearance and Bunding</a>
-            </div>
-        </section>
+      <section class="projects">
+        <div class="wrapper projects__wrapper">
+          <div class="projects__grid">
+            <h2 class="projects__headline header-xl">Activities</h2>
+            <a href="#contact" class="projects__contact underline"
+              ></a>
 
+            <div class="projects__item">
+              <picture class="projects__picture">
+                <source
+                  media="(min-width: 62.5em)"
+                  srcset="./assets/images/thumbnail-project-1-large.webp"
+                />
+                <img
+                  class="projects__image"
+                  src="./assets/images/thumbnail-project-1-small.webp"
+                  alt="Community members looking at a map"
+                  width-="343"
+                  height="253"
+                />
+              </picture>
+              <h3 class="projects__name">Voluntary Organisation</h3>
+              <p class="projects__tags">
+                <span>COMMUNITY-LED</span>
+                <span>LANDOWNER PARTICIPATION</span>
+              </p>
+              <div class="projects__links">
+                <a href="aboutus.html" class="underline">About Us</a>
+    
+              </div>
+            </div>
+
+            <div class="projects__item">
+              <picture class="projects__picture">
+                <source
+                  media="(min-width: 62.5em)"
+                  srcset="./assets/images/thumbnail-project-2-large.webp"
+                />
+                <img
+                  class="projects__image"
+                  src="./assets/images/thumbnail-project-2-small.webp"
+                  alt="Whooper Swan by Christina Nöbauer"
+                  width-="343"
+                  height="253"
+                />
+              </picture>
+              <h3 class="projects__name">Supporting Global Conservation</h3>
+              <p class="projects__tags">
+                <span>WHOOPER SWAN</span>
+                <span>BERWICK'S SWAN</span>
+              </p>
+              <div class="projects__links">
+                <a href="swancensus.html" class="underline">International Swan Census</a>
+              
+              </div>
+            </div>
+
+            <div class="projects__item">
+              <picture class="projects__picture">
+                <source
+                  media="(min-width: 62.5em)"
+                  srcset="./assets/images/thumbnail-project-3-large.webp"
+                />
+                <img
+                  class="projects__image"
+                  src="./assets/images/thumbnail-project-3-small.webp"
+                  alt="Otter captured on trail camera May 2025"
+                  width-="343"
+                  height="253"
+                />
+              </picture>
+              
+				<h3 class="projects__name">MONITORING AND RECORDING</h3>
+              <p class="projects__tags">
+				  <span>TRAIL CAMERA</span>
+                <span>VEGETATION RELEVÉ</span>
+              </p>
+              <div class="projects__links">
+                <a href="monitoring.html" class="underline">Our Activities</a>
+              </div>
+            </div>
+
+            <div class="projects__item">
+              <picture class="projects__picture">
+                <source
+                  media="(min-width: 62.5em)"
+                  srcset="./assets/images/thumbnail-project-4-large.webp"
+                />
+                <img
+                  class="projects__image"
+                  src="./assets/images/thumbnail-project-4-small.webp"
+                  alt="four photos of members recording the bog with cameras and binoculars"
+                  width-="343"
+                  height="253"
+                />
+              </picture>
+              <h3 class="projects__name">TECHNOLOGY TUTORIALS</h3>
+              <p class="projects__tags">
+                <span>CITIZEN SCIENCE PORTAL</span>
+                <span>MERLIN, SEEK, OBSIDENTIFY</span>
+              </p>
+              <div class="projects__links">
+                <a href="technology.html" class="underline">HOW TO</a>
+                
+              </div>
+            </div>
+
+            <div class="projects__item">
+              <picture class="projects__picture">
+                <source
+                  media="(min-width: 62.5em)"
+                  srcset="./assets/images/thumbnail-project-5-large.webp"
+                />
+                <img
+                  class="projects__image"
+                  src="./assets/images/thumbnail-project-5-small.webp"
+                  alt="bog cotton growning in drainage ditch"
+                  width-="343"
+                  height="253"
+                />
+              </picture>
+              <h3 class="projects__name">ARTIST RESIDENCY</h3>
+              <p class="projects__tags">
+                <span>POETS, ARTISTS</span>
+                <span>RESEARCHERS</span>
+              <div class="projects__links">
+                <a href="artist.html" class="underline">ARTIST RESIDENCY</a>
+              </div>
+            </div>
+
+            <div class="projects__item">
+              <picture class="projects__picture">
+                <source
+                  media="(min-width: 62.5em)"
+                  srcset="./assets/images/thumbnail-project-6-large.webp"
+                />
+                <img
+                  class="projects__image"
+                  src="./assets/images/thumbnail-project-6-small.webp"
+                  alt="spagnum growing in water pool beside dry heather"
+                  width-="343"
+                  height="253"
+                />
+              </picture>
+              <h3 class="projects__name">embryonic raised bog</h3>
+              <p class="projects__tags">
+                <span>ECOLOGY, habitat</span>
+                <span>HERITAGE</span>
+              </p>
+              <div class="projects__links">
+                <a href="aboutcornafulla.html" class="underline">About Cornafulla Bog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      
     </main>
 
-</body>
+    <footer class="footer bg-less-dark">
+      <h2 class="visually-hidden">Footer</h2>
+      <div class="wrapper">
+        <nav class="header__nav">
+          <h2 class="visually-hidden">Navigation</h2>
+          <a href="index.html" class="header__home">
+            Cornafulla Micro Reserve
+            <span class="visually-hidden">(to home page)</span>
+          </a>
+         
+
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>
