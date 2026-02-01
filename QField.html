@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>QField for QGIS</title>
+  </head>
+  <body>
+    <header class="header">
+      <h2 class="visually-hidden">Header</h2>
+      <div class="wrapper">
+        <nav class="header__nav">
+          <h2 class="visually-hidden">Navigation</h2>
+          <a href="index.html" class="header__home">
+            Cornafulla Micro Reserve
+            <span class="visually-hidden">(to home page)</span>
+          </a>
+          
+          
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="wrapper hero__wrapper bottom-border">
+          <div class="hero__content">
+
+            
+            <div class="hero__text">
+              <h1 class="hero__headline header-xl">
+                QField<span> for QGIS</span>
+              </h1>
+              
+       <p class="hero__description">
+		   
+		   <p>&nbsp; </p>
+				
+				<p><H2>QGIS for QFIELD Tutorial below</H2></p>
+				<p>&nbsp; </p>
+				
+				<H2>Our Monitoring Aims</H2>
+<p>Cornafulla Micro Reserve is a community-led initiative focused on understanding and protecting the wildlife of our local landscape. A key priority is monitoring birds on Cornafulla bog, with particular attention to the flight paths of whooper swans between the bog and the Shannon Callows Special Area of Conservation. By keeping a consistent record over several years, we aim to move beyond anecdotal observations and build a robust, long-term evidence base. Alongside mapping flight paths, we also want to count the numbers of whooper swans present, including adults and juveniles, and to study other important species such as snipe, lapwing, and curlew. </p>
+<H2>Why Digital Field Mapping Matters</H2>
+<p>Because our work may inform conservation and planning decisions, it is essential that observations are supported by verifiable evidence. Photos, videos, and audio recordings that are accurately linked to location and time allow us to demonstrate not just that birds are present, but where and how they use the landscape. For this reason, we are trialling a combination of QGIS, QField, and QCloud to see whether they can meet our needs for accurate field recording, offline working, and long-term data management. </p>
+<H2>Using QField and QGIS in the Field</H2>
+<p>QField is particularly well suited to bird monitoring as it allows observers to record real-time flight paths as line features using GPS tracking, log roosting or feeding areas as precise point locations, and attach photos, videos, and audio clips directly to each observation. Media captured in the field is saved within the project structure and linked to the relevant record, ensuring that all evidence remains georeferenced and easy to retrieve later. This is especially important when data needs to be reviewed months or years after it was collected. </p>
+<H2>Long-Term Data Storage and Organisation</H2>
+<p>To manage data across multiple seasons and years, we use a GeoPackage as our core data format. A GeoPackage can be thought of as an all-in-one container for geographic information, holding multiple layers of data along with their attributes and links to supporting media. It works fully offline, is easy to share between team members, and does not require a dedicated server, making it an ideal solution for a small community group. When used with QField, all field observations are written directly into this single file, creating a clear and reliable link between fieldwork, analysis, and long-term storage. </p>
+<H2>Improving Accuracy with GNSS Technology</H2>
+<p>To strengthen the credibility of our records, we are also exploring the use of an external GNSS antenna with QField. This significantly improves positional accuracy compared to a standard smartphone, reducing typical errors from several metres down to centimetre-level precision. Such accuracy is particularly important for documenting flight paths and roosting sites in relation to proposed infrastructure, as it provides a scientifically defensible spatial record that can withstand technical scrutiny. </p>
+<H2>How Flight Paths Are Recorded</H2>
+<p>It is important to clarify that the antenna does not detect birds itself; it simply calculates its own position using satellite signals. The observer remains the sensor. Flight paths are recorded by manually digitising the bird’s movement in real time, drawing the line on the screen while QField continuously logs the observer’s precise ground position. Estimated flight height is recorded manually, and where birds pass known landmarks, these reference points can later be used to help verify altitude. When combined with geotagged photos or videos, this approach creates a transparent and well-documented evidence trail. </p>
+<H2>Choosing Practical, Community-Friendly Hardware</H2>
+<p>To achieve high accuracy, GNSS systems require correction signals to remove atmospheric errors. For a multi-year project in a relatively remote area, we are considering options that balance cost, reliability, and independence from subscriptions. We are also trialling the ArduSimple RTK Handheld 2 Mapping Kit, which offers an accessible entry point to high-precision mapping in an ergonomic, all-in-one design. Its ease of use on uneven, wet bog terrain makes it particularly suitable for long field sessions carried out by community volunteers, supporting our goal of gathering reliable data in a practical and sustainable way. </p>
+
+      <p>&nbsp; </p>          
+<p><H2>QGIS for QFIELD Tutorial begins here</H2></p>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <footer class="footer bg-less-dark">
+      <h2 class="visually-hidden">Footer</h2>
+      <div class="wrapper">
+        <nav class="header__nav">
+          <h2 class="visually-hidden">Navigation</h2>
+          <a href="index.html" class="header__home">
+            Back to homepage
+            <span class="visually-hidden">(to home page)</span>
+          </a>
+          
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
