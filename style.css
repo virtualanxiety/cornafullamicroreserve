@@ -503,14 +503,7 @@ h1 > span {
 
 .projects__image {
   width: 100%;
-  aspect-ratio: 343 / 253;
-  object-fit: cover;
-  display: block;
-}
-
-.projects__video {
   height: auto;
-  border: 0;
 }
 
 .projects__name {
@@ -621,12 +614,10 @@ h1 > span {
     opacity: 0.5;
   }
 
-.projects__image {
-  width: 100%;
-  aspect-ratio: 343 / 253;
-  object-fit: cover;
-  display: block;
-}
+  .projects__image {
+    width: 100%;
+    height: auto;
+  }
 
   .projects__links {
     grid-column: 1 / 2;
