@@ -767,21 +767,3 @@ footer {
     padding-block: 47px 92px;
   }
 }
-
-.hero .hero__description a,
-
-.hero .hero__description a:visited {
-
-  color: var(--accent) !important;
-
-  text-decoration: underline;
-
-}
-
-.hero .hero__description a:hover,
-
-.hero .hero__description a:focus {
-
-  color: var(--text1) !important;
-
-}
