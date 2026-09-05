@@ -768,24 +768,20 @@ footer {
   }
 }
 
-.hero__description a {
+.hero .hero__description a,
 
-  color: var(--accent);
+.hero .hero__description a:visited {
+
+  color: var(--accent) !important;
 
   text-decoration: underline;
 
 }
 
-.hero__description a:visited {
+.hero .hero__description a:hover,
 
-  color: var(--accent);
+.hero .hero__description a:focus {
 
-}
-
-.hero__description a:hover,
-
-.hero__description a:focus {
-
-  color: var(--text1);
+  color: var(--text1) !important;
 
 }
